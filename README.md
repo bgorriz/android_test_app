@@ -35,3 +35,14 @@ and more pages can be fetched when user scrolls through the list
 network connection, it could also remember what entries were previously deleted
 - inline images, some messages contain a link to an image, it owuld be nice to display those images inline
 
+## For Scala applicants
+Provided in the source code above is a simple scala-on-android application using the [sbt-android](https://github.com/scala-android/sbt-android) plugin. Feel free to use this template or write your own build setup if you prefer. Please quickly read the introduction on the sbt-android plugin website and follow their instructions carefully (e.g., using IntelliJ instead of Android Studio - if you so choose!). The guide also includes steps for installing the `ANDROID_SDK` which you will need installed on your system in order to run the project. Plenty more information on the android platform can be found on the [Android Developer Website](https://developer.android.com/index.html)
+
+Furthermore, some other tips for a smoother development experience in IntelliJ:
+* Ensure that the project SDK is Android Java, and not just Java
+* From the SBT android plugin: To ensure proper building, configure the IDE Run command to execute an SBT android:package task instead of Make (remove the make entry); this is found under Run Configurations.
+* Make sure that you mark the `target` directory as `Not Excluded` in order for the R class to appear as compiled
+* Once that is done, IntelliJ should notice that you have an Android project - configure it, and you can use Android Monitor
+
+If anything is unclear, please let us know.
+
