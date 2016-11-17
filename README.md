@@ -7,7 +7,7 @@ The task is to create Android app which shows a list of messages and supports de
 Messages should be downloaded from this endpoint:
 
 ```
-https://rawgit.com/wireapp/android_test_app/master/{PAGE}.json
+https://rawgit.com/wireapp/android_test_app/master/endpoint/{PAGE}.json
 ```
 
 Where `{PAGE}` is a number, starting from `0`. 
