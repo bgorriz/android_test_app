@@ -1,5 +1,4 @@
 import com.android.tools.lint.checks.ApiDetector
-import de.heikoseeberger.sbtheader.license.GPLv3
 import sbt.Keys._
 
 androidBuild
@@ -12,17 +11,11 @@ proguardCache := Nil
 
 resolvers in ThisBuild ++= Seq(
   Resolver.mavenLocal,
-  Resolver.jcenterRepo,
-  Resolver.bintrayRepo("wire-android", "releases")
+  Resolver.jcenterRepo
 )
-
-lazy val licenseHeaders = HeaderPlugin.autoImport.headers := Set("scala", "java", "rs").map {
-  _ -> GPLv3("2016", "Wire Swiss GmbH")
-}(collection.breakOut)
 
 lazy val androidScala = project
   .in(file("."))
-  .enablePlugins(AutomateHeaderPlugin).settings(licenseHeaders)
   .settings(
     name := "android-scala-test",
     organization := "com.wire",
