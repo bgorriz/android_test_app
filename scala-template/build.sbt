@@ -32,9 +32,7 @@ lazy val androidScala = project
     lintStrict := true,
     libraryDependencies ++= Seq(
       "com.android.support" % "support-v4" % "23.1.0",
-      "com.android.support" % "appcompat-v7" % "23.1.0",
-      //TODO break up the wire project into more useful modules that can be re-used here as well
-      "com.wire" % "zmessaging-android-macrosupport" % "3.0"
+      "com.android.support" % "appcompat-v7" % "23.1.0"
     )
   )
 
